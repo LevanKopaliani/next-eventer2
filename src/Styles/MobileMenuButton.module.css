@@ -1,0 +1,21 @@
+.mobile_menu_button {
+  min-width: 20px;
+
+  height: 20px;
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background-color: transparent;
+  border: none;
+}
+.mobile_menu_button span {
+  border-radius: 4px;
+  height: 2px;
+  display: block;
+  transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+  .mobile_menu_button {
+    display: flex;
+  }
+}

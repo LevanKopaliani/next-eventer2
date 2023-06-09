@@ -1,0 +1,12 @@
+.login_tabs ul li:hover {
+  color: #fe4e6e;
+}
+.login_tabs ul,
+.login_tabs ul li,
+.login_tabs span {
+  display: flex;
+  align-items: center;
+}
+.login_tabs ul li {
+  padding: 0 10px;
+}
