@@ -8,6 +8,7 @@ import MobileMenuButton from "./MobileMenuButton";
 import MobileMenu from "./MobileMenu";
 import styles from "../Styles/Navbar.module.css";
 import LoginTabs from "./LoginTabs";
+import Link from "next/link";
 
 const Navbar = ({ scrollHeight }) => {
   const [searchisOpen, setSearchIsOpen] = useState(false);
@@ -34,11 +35,13 @@ const Navbar = ({ scrollHeight }) => {
       />
       <MobileMenu isOpen={mobileMenuOpen} />
       <div className={styles.logo_container}>
-        <Image
-          src={scrollHeight ? LogoBlack : LogoWhite}
-          alt="logo"
-          className={styles.logo_img}
-        />
+        <Link href={"/"}>
+          <Image
+            src={scrollHeight ? LogoBlack : LogoWhite}
+            alt="logo"
+            className={styles.logo_img}
+          />
+        </Link>
       </div>
       {!searchisOpen ? (
         <ul className={styles.nav_links}>

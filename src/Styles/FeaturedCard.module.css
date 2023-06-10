@@ -1,0 +1,22 @@
+.featuredcard {
+  /* max-height: 325px; */
+  /* flex: 1; */
+
+  border-radius: 4px;
+  box-shadow: 0 0 20px 0 rgba(91, 91, 91, 0.17);
+}
+.poster {
+  display: block;
+  width: 100%;
+  object-fit: cover; /* fix */
+  height: 242px;
+  /* height: 100%; */
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.details {
+  display: block;
+  height: 80px;
+  padding: 15px;
+}

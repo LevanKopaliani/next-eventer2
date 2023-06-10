@@ -1,0 +1,20 @@
+.events_map {
+  width: 100%;
+}
+.switch_container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.map_container {
+  padding: 0 15px;
+  width: 100%;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.map_container img {
+  display: block;
+  width: 100%;
+  /* max-height: 500px; */
+  height: auto;
+}

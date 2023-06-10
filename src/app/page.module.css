@@ -1,14 +1,21 @@
 .main {
   min-height: 100vh;
 }
-.mainbanner_container {
+.banner_container {
   width: 100%;
   height: auto;
 }
-.mainbanner_image {
+.banner_image {
   width: 100%;
   height: auto;
   /* background-size: cover;
   background-repeat: no-repeat;
   background-position: center; */
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 966px;
+  width: 100%;
+  min-height: 600px;
+  padding-bottom: 20px;
 }

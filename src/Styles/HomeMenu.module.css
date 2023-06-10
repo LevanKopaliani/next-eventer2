@@ -1,0 +1,36 @@
+.menu {
+  margin-bottom: 10px;
+  padding: 30px 15px 0 15px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link {
+  max-width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.active {
+  composes: link;
+  color: #65ead1;
+  fill: #65ead1;
+}
+
+.icons {
+  max-width: 35px;
+  display: block;
+}
+.link span {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
