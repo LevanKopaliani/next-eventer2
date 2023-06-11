@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   gap: 30px;
-  color: #fff;
+  /* color: #fff; */
 }
 .logo_container {
   max-width: 54px;

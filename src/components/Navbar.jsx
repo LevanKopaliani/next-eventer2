@@ -24,9 +24,8 @@ const Navbar = ({ scrollHeight }) => {
 
   return (
     <nav
-      className={`${styles.navbar} ${
-        scrollHeight ? "text-black " : "text-white"
-      }`}
+      style={{ color: scrollHeight ? "#333" : "#fff" }}
+      className={styles.navbar}
     >
       <MobileMenuButton
         scrollHeight={scrollHeight}
