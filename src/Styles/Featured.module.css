@@ -19,9 +19,6 @@
 }
 .content {
   padding: 20px 0;
-  /* display: flex;
-  flex: 1;
-  flex-wrap: wrap; */
   display: grid;
   gap: 20px;
   justify-content: center;
@@ -32,4 +29,33 @@
 
 .card:nth-child(3) {
   grid-column: span 2;
+}
+.swiper {
+  display: none;
+  margin-top: 20px;
+  box-shadow: 0 0 20px 0 rgba(91, 91, 91, 0.17);
+}
+.pagi {
+  display: none;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.pagi_bullet {
+  background-color: #65ead1;
+}
+.slide {
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .content {
+    display: none;
+  }
+  .swiper,
+  .pagi {
+    display: block;
+  }
 }
