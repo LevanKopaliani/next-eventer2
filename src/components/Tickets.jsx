@@ -69,7 +69,7 @@ const Tickets = () => {
       </div>
       <div className={styles.content}>
         {dummyData.map((item) => (
-          <Card {...item} />
+          <Card key={item.id} {...item} />
         ))}
       </div>
     </section>
