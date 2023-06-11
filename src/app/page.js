@@ -6,6 +6,7 @@ import styles from "./page.module.css";
 import HomeMenu from "@/components/HomeMenu";
 import EventsMap from "@/components/EventsMap";
 import Featured from "@/components/Featured";
+import Tickets from "@/components/Tickets";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <HomeMenu />
         <EventsMap />
         <Featured />
+        <Tickets />
       </section>
     </main>
   );
