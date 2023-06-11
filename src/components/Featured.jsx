@@ -73,6 +73,7 @@ const Featured = () => {
               key={event.id + " swiper_item"}
             >
               <FeaturedCard
+                key={event.id}
                 fullwidth={true}
                 {...event}
                 className={styles.card}
