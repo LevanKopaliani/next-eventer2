@@ -19,6 +19,7 @@
 .input {
   width: 0;
   height: 0;
+  visibility: hidden;
 }
 input[type="checkbox"]:checked ~ .label:after {
   transform: translate(115%, -50%);
