@@ -13,14 +13,14 @@ const dummyData = [
   {
     id: "1",
     image: "https://picsum.photos/700/250",
-    title: "Festival 3 Days",
+    title: "Festival 1 Days",
     date: "01",
     location: "V. Bagrationi Bridge, Tbilisi",
   },
   {
     id: "2",
     image: "https://picsum.photos/700/250",
-    title: "Festival 3 Days",
+    title: "Festival 2 Days",
     date: "02",
     location: "V. Bagrationi Bridge, Tbilisi",
   },
@@ -40,7 +40,7 @@ const Featured = () => {
       <div className={styles.content}>
         {dummyData.map((event) => (
           <FeaturedCard
-            key={event.id}
+            key={event.id + event.title}
             fullwidth={true}
             {...event}
             className={styles.card}
@@ -68,9 +68,11 @@ const Featured = () => {
           }}
         >
           {dummyData.map((event) => (
-            <SwiperSlide className={styles.slide}>
+            <SwiperSlide
+              className={styles.slide}
+              key={event.id + " swiper_item"}
+            >
               <FeaturedCard
-                key={event.id}
                 fullwidth={true}
                 {...event}
                 className={styles.card}
