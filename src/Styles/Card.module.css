@@ -7,6 +7,7 @@
   position: relative;
 }
 .poster {
+  cursor: pointer;
   position: relative;
   display: block;
   width: 100%;
@@ -30,29 +31,39 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  min-height: 105px;
+  /* min-height: 105px; */
   padding: 10px;
 }
 .date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   width: 40px;
   height: 40px;
   color: #696969;
   background-color: #f7f7f7;
   border: 1px solid #ebebeb;
   border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+.date p {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
 }
 .info {
   /* padding-left: 20px; */
   flex: 1 1 max-content;
 }
 .title {
-  font-size: 17px;
+  cursor: pointer;
+  font-size: 13px;
   color: #3c3b3b;
 }
 .location {
+  color: #9a9a9a;
   margin-top: 6px;
   display: flex;
   align-items: center;
@@ -61,17 +72,22 @@
   line-height: 1.3;
 }
 .buy {
-  align-self: flex-end;
-  justify-self: flex-end;
-  width: 110px;
-  height: 30px;
+  padding: 0 10px 10px 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.buy h3 {
+  cursor: pointer;
+  width: 90px;
+  height: 25px;
   padding: 6px;
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
+  border-radius: 4px;
   background-color: #e9e9e9;
   text-transform: uppercase;
-  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  color: #696969;
 }
 
 @media (max-width: 768px) {
@@ -85,6 +101,7 @@
 }
 @media (max-width: 640px) {
   .poster {
-    min-height: 300px;
+    height: 100%;
+    aspect-ratio: 1.5;
   }
 }
