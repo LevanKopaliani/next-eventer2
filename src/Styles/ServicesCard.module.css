@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.container img {
+  display: block;
+}
+.title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #3c3b3b;
+  margin: 20px 0 10px 0;
+}
+.subtitle {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #9a9a9a;
+  max-width: 290px;
+}

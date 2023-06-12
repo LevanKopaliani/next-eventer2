@@ -1,0 +1,61 @@
+.allevents {
+  padding: 0 10px;
+}
+.container {
+  margin: 10px 0;
+}
+.title {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  gap: 15px;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 400;
+  color: #3c3b3b;
+}
+.title::before {
+  content: url(../assets/img/calendar.svg);
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+}
+.content {
+  padding: 20px 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(302px, 1fr));
+}
+
+.load_more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 42px 0 50px 0;
+}
+
+.load_more button {
+  min-width: 160px;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #65ead1;
+  color: #65ead1;
+  cursor: pointer;
+  background-color: transparent;
+
+  border-radius: 4px;
+  outline: none;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  transition: all 0.4s ease;
+}
+
+.load_more button:hover {
+  border-color: #65ead1;
+  background-image: linear-gradient(to bottom, #59ecab, #65ead1);
+  color: #fff;
+}

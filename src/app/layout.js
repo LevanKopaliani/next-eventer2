@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
       <body className={`${lato.className} font-sans`}>
         <Header />
         {children}
+
         <Footer />
       </body>
     </html>

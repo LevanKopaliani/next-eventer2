@@ -132,6 +132,9 @@
   padding-left: 10px;
   padding-right: 10px;
 }
+.coin_visa {
+  display: none;
+}
 @media (max-width: 1000px) {
   .social,
   .sitemap {

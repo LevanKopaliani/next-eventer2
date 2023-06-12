@@ -7,6 +7,8 @@ import HomeMenu from "@/components/HomeMenu";
 import EventsMap from "@/components/EventsMap";
 import Featured from "@/components/Featured";
 import Tickets from "@/components/Tickets";
+import Services from "@/components/Services";
+import AllEvents from "@/components/AllEvents";
 
 export default function Home() {
   return (
@@ -23,7 +25,9 @@ export default function Home() {
         <EventsMap />
         <Featured />
         <Tickets />
+        <AllEvents />
       </section>
+      <Services />
     </main>
   );
 }

@@ -7,7 +7,7 @@ import Link from "next/link";
 const Card = (props) => {
   return (
     <div className={styles.card}>
-      <Link href={"/#"}>
+      <Link href={`/event/${props.title}`}>
         <div className={styles.poster_container}>
           <img src={props.image} alt={props.alt} className={styles.poster} />
         </div>
