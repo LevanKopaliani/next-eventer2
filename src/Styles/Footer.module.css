@@ -5,8 +5,9 @@
   color: #fff;
 }
 .subscribe {
-  max-width: 590px;
-  padding: 0 10px;
+  width: 90%;
+  max-width: 570px;
+  /* padding: 0 10px; */
   margin: 0 auto;
   text-align: center;
 }
@@ -65,4 +66,133 @@
   -moz-transition: all 400ms ease;
   -o-transition: all 400ms ease;
   transition: all 400ms ease;
+}
+.sitemap {
+  white-space: nowrap;
+  font-size: 15px;
+  display: flex;
+  max-width: 942px;
+  margin: 70px auto 0 auto;
+  padding: 50px 15px 0 15px;
+  border-top: solid 2px rgba(255, 255, 255, 0.5);
+}
+.links,
+.terms {
+  width: 25%;
+}
+.links li,
+.terms li,
+.payments li,
+.social_links li {
+  padding: 12px 0;
+}
+.terms li,
+.payments {
+  text-transform: uppercase;
+}
+.payments {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.coin,
+.visa {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.social {
+  max-width: 942px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+.social p {
+  width: 25%;
+  padding: 12px 0;
+}
+.social_container {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+.eventer {
+  text-transform: uppercase;
+}
+
+.social_links {
+  width: 152px;
+  display: flex;
+  /* gap: 20px; */
+}
+.social_links li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (max-width: 1000px) {
+  .social,
+  .sitemap {
+    max-width: 750px;
+  }
+}
+@media (max-width: 768px) {
+  .coin_container {
+    display: none;
+  }
+  .coin_visa {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  .visa {
+    gap: 12px;
+  }
+  .visa img {
+    width: 68px;
+  }
+  .coin_visa img {
+    width: 26px;
+    height: 26px;
+  }
+  .mastercard img {
+    width: 40px;
+    height: 25px;
+  }
+  .social,
+  .sitemap,
+  .terms {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .social {
+    padding-bottom: 20px;
+  }
+  .social p {
+    width: 100%;
+  }
+  .links {
+    margin-bottom: 10px;
+  }
+
+  .links,
+  .terms,
+  .rights {
+    order: 2;
+  }
+  .payments,
+  .social_links {
+    order: 1;
+    justify-content: center;
+  }
+  .payments_text {
+    text-align: left;
+  }
+  .eventer {
+    display: none;
+  }
 }
