@@ -9,10 +9,13 @@ import MobileMenu from "./MobileMenu";
 import styles from "../Styles/Navbar.module.css";
 import LoginTabs from "./LoginTabs";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = ({ scrollHeight }) => {
   const [searchisOpen, setSearchIsOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const pathName = usePathname();
 
   useEffect(() => {
     if (mobileMenuOpen) {
@@ -45,10 +48,20 @@ const Navbar = ({ scrollHeight }) => {
       {!searchisOpen ? (
         <ul className={styles.nav_links}>
           <li>
-            <a href="#services">services</a>
+            <a
+              style={{ color: pathName === "/services" ? "#fe4e6e" : "" }}
+              href="/services"
+            >
+              services
+            </a>
           </li>
           <li>
-            <a href="#contact">contact</a>
+            <a
+              style={{ color: pathName === "/contact" ? "#fe4e6e" : "" }}
+              href="/contact"
+            >
+              contact
+            </a>
           </li>
         </ul>
       ) : null}

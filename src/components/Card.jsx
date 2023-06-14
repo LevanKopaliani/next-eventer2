@@ -5,9 +5,16 @@ import Icon from "../assets/img/pin.svg";
 import Link from "next/link";
 
 const Card = (props) => {
+  // const route = props.title.split(" ").join("-");
+  // { `/event/${props.title.split(" ").join("-")}`}
   return (
     <div className={styles.card}>
-      <Link href={`/event/${props.title}`}>
+      <Link
+        href={{
+          pathname: `/event/${props.title.split(" ").join("-")}`,
+          query: { id: props.id },
+        }}
+      >
         <div className={styles.poster_container}>
           <img src={props.image} alt={props.alt} className={styles.poster} />
         </div>

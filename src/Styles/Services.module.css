@@ -1,41 +1,6 @@
-.services {
-}
-.banner {
-  height: 350px;
-  position: relative;
-  background-image: url("../assets/img/servicesbanner.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.caption {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.caption h1 {
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.9px;
-  text-align: center;
-  color: #ffffff;
-}
-.caption i {
-  font-size: 20px;
-  font-style: italic;
-  letter-spacing: 0.5px;
-  text-align: center;
-  color: #ffffff;
-  display: block;
-  margin-top: 30px;
-  margin-bottom: 45px;
-}
-.caption a {
-  display: flex;
-  justify-content: center;
-}
+/* .services {
+} */
+
 .caption button,
 .allservices button {
   cursor: pointer;
@@ -53,7 +18,7 @@
   color: #fff;
   transition: all 0.4s ease;
 }
-.caption button:hover,
+
 .allservices button:hover {
   border-color: #65ead1;
   background-image: linear-gradient(to bottom, #59ecab, #65ead1);
@@ -88,14 +53,5 @@
     flex-direction: column;
     align-items: center;
     padding: 62px 10px 0 10px;
-  }
-  .caption {
-    width: 90%;
-  }
-  .caption h1 {
-    font-size: 24px;
-  }
-  .caption i {
-    font-size: 16px;
   }
 }

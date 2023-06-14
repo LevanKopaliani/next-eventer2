@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import "./globals.css";
 import { Lato } from "next/font/google";
-import Footer from "@/components/Footer";
 
 const lato = Lato({
   weight: ["300", "400", "700"],

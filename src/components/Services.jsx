@@ -6,6 +6,7 @@ import Link from "next/link";
 import CardImage1 from "../assets/img/cashless-black.svg";
 import CardImage2 from "../assets/img/management.svg";
 import CardImage3 from "../assets/img/payment.svg";
+import ServicesBanner from "./ServicesBanner";
 
 const dummydata = [
   {
@@ -31,25 +32,16 @@ const dummydata = [
 const Services = () => {
   return (
     <section className={styles.services}>
-      <div className={styles.banner}>
-        <div className={styles.caption}>
-          <h1>SELL TICKETS WITH US</h1>
-          <i>
-            Set up an event remotely and let your audience buy tickets
-            <br />
-            with easiest, fastest and secure way
-          </i>
-          <Link href={"/#signup"}>
-            <button>Create Event</button>
-          </Link>
-        </div>
-      </div>
+      <ServicesBanner />
       <div className={styles.container}>
-        {dummydata.map((item) => (
+        <ServicesCard width={51} {...dummydata[0]} />
+        <ServicesCard width={51} {...dummydata[1]} />
+        <ServicesCard width={75} {...dummydata[2]} />
+        {/* {dummydata.map((item) => (
           <ServicesCard key={item.title} {...item} />
-        ))}
+        ))} */}
       </div>
-      <Link href={"/#services"} className={styles.allservices}>
+      <Link href={"/services"} className={styles.allservices}>
         <button>All Services</button>
       </Link>
     </section>

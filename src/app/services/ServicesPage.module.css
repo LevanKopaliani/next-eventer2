@@ -1,0 +1,70 @@
+.banner {
+  margin-top: 70px;
+}
+.container {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: #3c3b3b;
+  margin: 92px auto 20px auto;
+  position: relative;
+}
+.container h1:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  width: 60px;
+  height: 2px;
+  background-color: #65ead1;
+}
+.container h1:last-of-type:before {
+  background-color: #fe4e6e;
+}
+
+.grid {
+  margin-top: 62px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 62px;
+}
+.allservices button {
+  cursor: pointer;
+  align-self: center;
+  min-width: 250px;
+  background-color: transparent;
+  height: 40px;
+  border: 1px solid #65ead1;
+  border-radius: 4px;
+  outline: none;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  transition: all 0.4s ease;
+  padding: 0 10px;
+  color: #65ead1;
+  margin: 50px auto 100px auto;
+  display: block;
+}
+
+.allservices button:hover {
+  border-color: #65ead1;
+  background-image: linear-gradient(to bottom, #59ecab, #65ead1);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 62px;
+  }
+}
