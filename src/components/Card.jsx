@@ -6,15 +6,10 @@ import Link from "next/link";
 
 const Card = (props) => {
   // const route = props.title.split(" ").join("-");
-  // { `/event/${props.title.split(" ").join("-")}`}
+  // { `/event/${props.title.split(" ").join("-")}`}     //  PASS THIS TO HREF
   return (
     <div className={styles.card}>
-      <Link
-        href={{
-          pathname: `/event/${props.title.split(" ").join("-")}`,
-          query: { id: props.id },
-        }}
-      >
+      <Link href={`/event/${props.id}`}>
         <div className={styles.poster_container}>
           <img src={props.image} alt={props.alt} className={styles.poster} />
         </div>

@@ -1,10 +1,35 @@
-// import { data } from "./Data";
+import { url } from "inspector";
+import { getdata } from "./Data";
 
-// export async function getStaticProps() {
-//   const events = await data();
-//   return { props: { events } };
-// }
+import styles from "./EventDetails.module.css";
+import Image from "next/image";
 
-// export default function Page({ params }, props) {
-//   return <div>test</div>;
-// }
+export async function generateMetadata({ params }) {
+  // fetch here
+
+  return {
+    title: "...",
+    description: "...",
+  };
+}
+
+export default async function Page({ params }, props) {
+  const Data = await getdata(params.slug);
+
+  return (
+    <section>
+      <div className={styles.wrapper}>
+        <div className={styles.card}>
+          <div className={styles.main_img}>
+            <img src={Data.image} />
+          </div>
+          <div className={styles.details}>
+            <div className={styles.date}>
+              <p>{Data.date}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
