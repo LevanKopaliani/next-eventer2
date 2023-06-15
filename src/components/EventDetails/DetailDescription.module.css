@@ -1,0 +1,20 @@
+.container {
+  margin: 20px 0;
+  padding: 20px 15px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(91, 91, 91, 0.17);
+  margin-bottom: 20px;
+}
+.title {
+  width: min-content;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  color: #fe4e6e;
+  margin: 20px auto;
+  letter-spacing: 0.3px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #fe4e6e;
+}
