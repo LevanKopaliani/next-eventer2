@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./contact.module.css";
 import Link from "next/link";
+import Input from "@/components/Input/Input";
 
 const page = () => {
   return (
@@ -27,11 +28,10 @@ const page = () => {
           </Link>
         </div>
         <div className={styles.card}>
-          <div className={styles.group}>
-            <input type="text" />
-            <label htmlFor="">Name*</label>
-            <i className={styles.bar}></i>
-          </div>
+          <Input type={"text"} text={"Name*"} required />
+          <Input type={"email"} text={"Email*"} required />
+          <Input type={"textarea"} text={"Message*"} required />
+          <button>Send</button>
         </div>
       </div>
     </section>
