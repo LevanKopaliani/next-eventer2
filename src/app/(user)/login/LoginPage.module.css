@@ -1,0 +1,182 @@
+.container {
+  margin-top: 90px;
+  height: calc(100vh - 90px);
+  overflow-y: hidden;
+  display: flex;
+}
+.slider {
+  position: relative;
+  max-width: 60%;
+  width: 100%;
+}
+.signin {
+  max-width: 40%;
+  width: 100%;
+  padding: 46px 55px 20px 55px;
+}
+.slide {
+  width: 100%;
+  height: calc(100vh - 90px);
+  position: relative;
+}
+.slide img {
+  height: 100%;
+  object-fit: cover;
+}
+.caption {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-align: center;
+}
+.slide button,
+.submit button {
+  background-color: inherit;
+  min-width: 140px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  border-radius: 4px;
+  outline: none;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.slide button:hover {
+  background-color: inherit;
+  color: #ffffff;
+  border: 1px solid #65ead1;
+  background-image: linear-gradient(to bottom, #59ecab, #65ead1);
+}
+.submit button {
+  background-image: linear-gradient(to bottom, #59ecab, #65ead1);
+  border: none;
+}
+.pagi {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  bottom: 30px !important;
+}
+.pagi_bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  /* opacity: 0.2; */
+  z-index: 99;
+}
+
+.signin_caption {
+  padding: 0 35px;
+  margin-bottom: 40px;
+}
+.signin_caption h3 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: #3c3b3b;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.signin_caption p {
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  color: #9a9a9a;
+  margin: 0 0 10px;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 -6px 14px 0 rgba(254, 78, 110, 0.2);
+  padding: 20px 30px;
+}
+.submit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px rgba(151, 151, 151, 0.4);
+}
+.submit a {
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  color: #fe4e6e;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.fb_login {
+  display: flex;
+  justify-content: center;
+}
+
+.fb_login button {
+  width: 280px;
+  height: 42px;
+  border-radius: 2px;
+  font-size: 12px;
+  background-color: #1877f2;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  /* bottom: 20px; */
+}
+.signup {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #919090;
+  margin-top: 20px;
+}
+.signup a {
+  font-weight: bold;
+  color: #919090;
+}
+
+@media (max-width: 1200px) {
+  .signin {
+    padding: 46px 15px 20px 15px;
+  }
+}
+@media (max-width: 992px) {
+  .signin {
+    max-width: 50%;
+  }
+  .slider {
+    max-width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: 100%;
+  }
+  .signin {
+    max-width: 100%;
+    order: 1;
+  }
+  .slider {
+    max-width: 100%;
+    order: 2;
+  }
+  .signin_caption {
+    text-align: center;
+  }
+}

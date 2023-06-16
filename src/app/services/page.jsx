@@ -10,6 +10,7 @@ import management from "../../assets/img/management.svg";
 import after_movie from "../../assets/img/after_movie.svg";
 import media_management from "../../assets/img/media_management.svg";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 const dummydata = [
   {
@@ -74,6 +75,7 @@ const page = () => {
           <button>Create Event</button>
         </Link>
       </section>
+      <Footer />
     </>
   );
 };

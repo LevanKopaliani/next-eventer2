@@ -6,11 +6,11 @@ const LoginTabs = () => {
     <div className={styles.login_tabs}>
       <ul>
         <li>
-          <a href="#login">Sign in</a>
+          <a href="/login">Sign in</a>
         </li>
         <span>/</span>
         <li>
-          <a href="#signup">Sign up</a>
+          <a href="/signup">Sign up</a>
         </li>
       </ul>
     </div>

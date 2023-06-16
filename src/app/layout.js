@@ -15,12 +15,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${lato.className} font-sans`}>
+    <html lang="en" className={`${lato.className} font-sans`}>
+      <body>
         <Header />
         {children}
-
-        <Footer />
       </body>
     </html>
   );
