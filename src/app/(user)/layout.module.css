@@ -1,0 +1,13 @@
+.container {
+  margin-top: 90px;
+  height: calc(100vh - 90px);
+  overflow-y: hidden;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: 100%;
+  }
+}

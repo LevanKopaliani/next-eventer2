@@ -1,5 +1,5 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import LoginSlider from "./LoginSlider";
+import styles from "./layout.module.css";
 
 export const metadata = {
   title: "Create Next App",
@@ -7,5 +7,10 @@ export const metadata = {
 };
 
 export default function userLayout({ children }) {
-  return <main>{children}</main>;
+  return (
+    <main className={styles.container}>
+      <LoginSlider />
+      {children}
+    </main>
+  );
 }

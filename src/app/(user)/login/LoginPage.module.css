@@ -1,37 +1,9 @@
-.container {
-  margin-top: 90px;
-  height: calc(100vh - 90px);
-  overflow-y: hidden;
-  display: flex;
-}
-.slider {
-  position: relative;
-  max-width: 60%;
-  width: 100%;
-}
 .signin {
   max-width: 40%;
   width: 100%;
   padding: 46px 55px 20px 55px;
 }
-.slide {
-  width: 100%;
-  height: calc(100vh - 90px);
-  position: relative;
-}
-.slide img {
-  height: 100%;
-  object-fit: cover;
-}
-.caption {
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  text-align: center;
-}
-.slide button,
+
 .submit button {
   background-color: inherit;
   min-width: 140px;
@@ -49,29 +21,10 @@
   -o-transition: all 400ms ease;
   transition: all 400ms ease;
 }
-.slide button:hover {
-  background-color: inherit;
-  color: #ffffff;
-  border: 1px solid #65ead1;
-  background-image: linear-gradient(to bottom, #59ecab, #65ead1);
-}
+
 .submit button {
   background-image: linear-gradient(to bottom, #59ecab, #65ead1);
   border: none;
-}
-.pagi {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  bottom: 30px !important;
-}
-.pagi_bullet {
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-  /* opacity: 0.2; */
-  z-index: 99;
 }
 
 .signin_caption {
