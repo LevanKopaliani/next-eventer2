@@ -24,6 +24,22 @@
 .group textarea {
   resize: none;
 }
+.group select {
+  width: 100%;
+  font-size: 14px;
+  padding: 8px 0;
+  background: none;
+  border: none;
+  line-height: 1.6px;
+  box-shadow: none;
+  outline: none;
+}
+.group select ~ label {
+  left: 0;
+}
+
+.group [type="date"] ~ label,
+.group select ~ label,
 .group textarea:focus ~ label,
 .group textarea.active_input ~ label,
 .group input:focus ~ label,
@@ -32,12 +48,17 @@
   top: -18px;
 }
 
-.group input:focus ~ .bar,
-.group input:focus ~ .bar:before,
+.group [type="date"]:focus ~ .bar,
+.group [type="date"].active_input ~ .bar:before,
+.group select:focus ~ .bar,
+.group select:focus ~ .bar:before,
+.group select.active_input ~ .bar,
+.group select.active_input ~ .bar:before,
 .group textarea:focus ~ .bar,
 .group textarea:focus ~ .bar:before,
 .group textarea.active_input ~ .bar,
 .group textarea.active_input ~ .bar:before,
+.group input:focus ~ .bar:before,
 .group input.active_input ~ .bar,
 .group input.active_input ~ .bar:before {
   width: 100%;

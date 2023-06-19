@@ -1,37 +1,14 @@
-.signin {
+.user_signup {
   max-width: 40%;
   width: 100%;
   padding: 46px 55px 20px 55px;
+  overflow-y: scroll;
 }
-
-.submit button {
-  background-color: inherit;
-  min-width: 140px;
-  height: 40px;
-  border: 1px solid #ffffff;
-  text-align: center;
-  font-size: 17px;
-  font-weight: 700;
-  letter-spacing: 0.4px;
-  color: #ffffff;
-  border-radius: 4px;
-  outline: none;
-  -webkit-transition: all 400ms ease;
-  -moz-transition: all 400ms ease;
-  -o-transition: all 400ms ease;
-  transition: all 400ms ease;
-}
-
-.submit button {
-  background-image: linear-gradient(to bottom, #59ecab, #65ead1);
-  border: none;
-}
-
-.signin_caption {
+.caption {
   padding: 0 35px;
   margin-bottom: 40px;
 }
-.signin_caption h3 {
+.caption h3 {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.4px;
@@ -39,13 +16,6 @@
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.signin_caption p {
-  font-size: 13px;
-  letter-spacing: 0.3px;
-  color: #9a9a9a;
-  margin: 0 0 10px;
-}
-
 .card {
   position: relative;
   width: 100%;
@@ -55,22 +25,47 @@
   box-shadow: 0 -6px 14px 0 rgba(254, 78, 110, 0.2);
   padding: 20px 30px;
 }
-.submit {
+.group {
+  /* width: 50%; */
   display: flex;
+  gap: 30px;
   justify-content: space-between;
-  align-items: center;
+}
+.group div {
+  margin-bottom: unset;
+  width: 100%;
+}
+.submit {
   position: relative;
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 30px; /* 60px */
   padding-bottom: 30px;
   border-bottom: solid 1px rgba(151, 151, 151, 0.4);
+  display: flex;
+  flex-direction: column;
 }
-.submit a {
+.submit h4 {
   font-size: 13px;
-  letter-spacing: 0.3px;
-  color: #fe4e6e;
-  padding: 10px 0;
-  cursor: pointer;
+  margin-top: 22px;
+  margin-bottom: 0;
+  line-height: 20px;
+  color: #919090;
+  font-weight: 400;
+}
+.submit h4 span {
+  font-weight: bold;
+  color: #919090;
+  text-decoration: none;
+}
+.btn {
+  align-self: flex-end;
+  width: 110px;
+  position: relative;
+  right: 0;
+  margin-top: 10px;
+  background-color: inherit;
+  border: 1px solid #65ead1 !important;
+  color: #65ead1 !important;
 }
 .fb_login {
   display: flex;
@@ -96,7 +91,7 @@
   letter-spacing: 0.3px;
   text-align: center;
   color: #919090;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 .signup a {
   font-weight: bold;
@@ -104,22 +99,31 @@
 }
 
 @media (max-width: 1200px) {
-  .signin {
+  .user_signup {
     padding: 46px 15px 20px 15px;
   }
 }
 @media (max-width: 992px) {
-  .signin {
+  .user_signup {
     max-width: 50%;
+  }
+  .caption {
+    text-align: center;
+  }
+  .btn {
+    align-self: center;
   }
 }
 @media (max-width: 768px) {
-  .signin {
+  .user_signup {
     max-width: 100%;
     order: 1;
   }
-
-  .signin_caption {
-    text-align: center;
+  .group {
+    flex-direction: column;
+    gap: 0;
+  }
+  .group div {
+    margin-top: 25px;
   }
 }

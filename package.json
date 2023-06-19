@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "dreamy-ui": "^0.0.11",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
     "next": "^13.4.6",

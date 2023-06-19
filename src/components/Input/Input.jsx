@@ -5,33 +5,58 @@ import styles from "./Input.module.css";
 const Input = (props) => {
   const [inputValue, setInputValue] = useState("");
 
-  const mainInput =
-    props.type === "textarea" ? (
-      <textarea
-        className={`${inputValue.length != 0 ? styles.active_input : ""} ${
-          props?.className
-        } `}
-        type={props.type || "text"}
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-        {...props}
-      />
-    ) : (
-      <input
-        className={`${inputValue.length != 0 ? styles.active_input : ""} ${
-          props?.className
-        } `}
-        type={props.type || "text"}
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-        {...props}
-      />
-    );
+  let mainInput;
+
+  switch (props.type) {
+    case "textarea":
+      mainInput = (
+        <textarea
+          className={`${inputValue.length != 0 ? styles.active_input : ""} ${
+            props?.className
+          } `}
+          // type={"text"}
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          {...props}
+        />
+      );
+      break;
+    case "select":
+      mainInput = (
+        <select
+          id={props.id || ""}
+          className={`${inputValue.length != 0 ? styles.active_input : ""}${
+            props?.className || ""
+          } `}
+          onChange={(e) => setInputValue(e.target.value)}
+        >
+          {props.option?.map((item) => (
+            <option value={item} key={item}>
+              {item}
+            </option>
+          ))}
+        </select>
+      );
+      break;
+    default:
+      mainInput = (
+        <input
+          autoComplete="false"
+          className={`${inputValue.length != 0 ? styles.active_input : ""}${
+            props?.className || ""
+          } `}
+          type={"text"}
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          {...props}
+        />
+      );
+  }
 
   return (
     <div className={styles.group}>
       {mainInput}
-      <label htmlFor="">{props.text || "text"}</label>
+      <label htmlFor="">{props.text}</label>
       <i className={styles.bar}></i>
     </div>
   );

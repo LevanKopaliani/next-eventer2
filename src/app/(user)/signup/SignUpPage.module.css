@@ -3,3 +3,69 @@
   width: 100%;
   padding: 46px 55px 20px 55px;
 }
+.signup_caption {
+  padding: 0 35px;
+  margin-bottom: 40px;
+}
+.signup_caption h3 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: #3c3b3b;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.user_tab {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: solid 1px #e9e9e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.user_tab h3,
+.company_tab h3 {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #3c3b3b;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+.user_tab button,
+.company_tab button {
+  width: 270px;
+  border: 1px solid #65ead1;
+  color: #65ead1;
+}
+
+.company_tab {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .signup {
+    padding: 46px 15px 20px 15px;
+  }
+}
+@media (max-width: 992px) {
+  .signup {
+    max-width: 50%;
+  }
+  .signup_caption {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .signup {
+    max-width: 100%;
+    order: 1;
+  }
+}

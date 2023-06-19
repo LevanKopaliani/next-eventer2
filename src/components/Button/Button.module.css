@@ -1,0 +1,23 @@
+.btn {
+  background-color: inherit;
+  min-width: 140px;
+  height: 40px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  border-radius: 4px;
+  outline: none;
+  -webkit-transition: all 400ms ease;
+  -moz-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+}
+.btn:hover {
+  border: 1px solid #ffffff !important;
+  color: #ffffff !important;
+  background-image: linear-gradient(to bottom, #59ecab, #65ead1);
+}

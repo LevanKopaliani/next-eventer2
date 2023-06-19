@@ -5,7 +5,7 @@ import styles from "./LoginPage.module.css";
 import Input from "@/components/Input/Input";
 import Link from "next/link";
 
-const page = () => {
+const page = (props) => {
   return (
     <div className={styles.signin}>
       <div className={styles.signin_caption}>
