@@ -49,6 +49,7 @@
 }
 
 .group [type="date"]:focus ~ .bar,
+.group [type="date"].active_input ~ .bar,
 .group [type="date"].active_input ~ .bar:before,
 .group select:focus ~ .bar,
 .group select:focus ~ .bar:before,
