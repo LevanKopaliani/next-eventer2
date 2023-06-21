@@ -35,7 +35,7 @@ const Navbar = ({ scrollHeight }) => {
         setMobileMenuOpen={setMobileMenuOpen}
         mobileMenuOpen={mobileMenuOpen}
       />
-      <MobileMenu isOpen={mobileMenuOpen} />
+      <MobileMenu isOpen={mobileMenuOpen} onCloseMenu={setMobileMenuOpen} />
       <div className={styles.logo_container}>
         <Link href={"/"}>
           <Image
