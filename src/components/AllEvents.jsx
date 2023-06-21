@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Card from "./Card";
 import styles from "../Styles/AllEvents.module.css";
+import FilterBar from "./FilterBar/FilterBar";
 
 const dummyData = [
   {
@@ -131,7 +132,7 @@ if (dummyData.length > 9) {
   slicedData = dummyData.slice(0, 9);
 }
 
-const AllEvents = () => {
+const AllEvents = (props) => {
   const [viewAll, setViewAll] = useState(false);
 
   const LoadMoreButton = (
@@ -141,9 +142,10 @@ const AllEvents = () => {
   );
 
   return (
-    <section className={styles.allevents}>
+    <section className={styles.allevents} style={props.style}>
       <div className={styles.container}>
         <h3 className={styles.title}>All Events</h3>
+        {props.filter && <FilterBar />}
       </div>
       <div className={styles.content}>
         {dummyData.slice(0, 9).map((item) => (

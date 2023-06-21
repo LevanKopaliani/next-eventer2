@@ -1,13 +1,8 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import styles from "../Styles/Tickets.module.css";
 import Card from "./Card";
-
-export const getServerSideProps = async () => {
-  const res = await fetch("../data/TicketsData.jsx");
-  const repo = await res.json();
-  console.log(repo);
-  return { props: { repo } };
-};
+import FilterBar from "./FilterBar/FilterBar";
 
 const dummyData = [
   {
@@ -32,35 +27,35 @@ const dummyData = [
     location: "V. Bagrationi Bridge, Tbilisi",
   },
   {
-    id: "3",
+    id: "4",
     image: "https://picsum.photos/700/250",
     title: "Festival 3 Days",
     date: "jan 05",
     location: "V. Bagrationi Bridge, Tbilisi",
   },
   {
-    id: "3",
+    id: "5",
     image: "https://picsum.photos/700/250",
     title: "Festival 3 Days",
     date: "jan 05",
     location: "V. Bagrationi Bridge, Tbilisi",
   },
   {
-    id: "3",
+    id: "6",
     image: "https://picsum.photos/700/250",
     title: "Festival 3 Days",
     date: "jan 05",
     location: "V. Bagrationi Bridge, Tbilisi",
   },
   {
-    id: "3",
+    id: "7",
     image: "https://picsum.photos/700/250",
     title: "Festival 3 Days",
     date: "jan 05",
     location: "V. Bagrationi Bridge, Tbilisi",
   },
   {
-    id: "3",
+    id: "8",
     image: "https://picsum.photos/700/250",
     title: "Festival 3 Days",
     date: "jan 05",
@@ -69,10 +64,54 @@ const dummyData = [
 ];
 
 const Tickets = () => {
+  // const [openFilter, setOpenFilter] = useState(false);
+  // const [popular, setPopular] = useState(false);
+  // const [weekend, setWeekend] = useState(false);
+
+  // useEffect(() => {
+  //   setTimeout(() => setOpenFilter(true), 3000);
+  // }, []);
+
   return (
     <section className={styles.tickets}>
       <div className={styles.filter_container}>
         <h3 className={styles.title}>tickets</h3>
+        <FilterBar />
+        {/* <div className={styles.filter}>
+          <div
+            className={
+              openFilter
+                ? `${styles.filter_menu} ${styles.filter_visible}`
+                : styles.filter_menu
+            }
+          >
+            <ul>
+              <li>Date</li>
+              <li
+                onClick={() => setPopular(!popular)}
+                className={popular ? styles.filter_active : null}
+              >
+                Most Popular
+              </li>
+              <li
+                onClick={() => setWeekend(!weekend)}
+                className={weekend ? styles.filter_active : null}
+              >
+                This Weekend
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button
+          className={
+            openFilter
+              ? `${styles.fitler_button} ${styles.button_border}`
+              : styles.fitler_button
+          }
+          onClick={() => setOpenFilter(!openFilter)}
+        >
+          Filter
+        </button> */}
       </div>
       <div className={styles.content}>
         {dummyData.map((item) => (

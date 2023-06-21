@@ -10,19 +10,19 @@ import SportImage from "@/assets/img/SportImage";
 import { usePathname } from "next/navigation";
 
 //// path
+
 ////
 
 const HomeMenu = () => {
-  const [path, setPatch] = useState("/"); /// Err , need for path after refresh
+  const path = usePathname();
 
   return (
     <div className={styles.menu}>
       <ul className={styles.container}>
         <li>
           <Link
-            href={"/#music"}
-            onClick={() => setPatch("/#music")}
-            className={path === "/#music" ? styles.active : styles.link}
+            href={"/music"}
+            className={path === "/music" ? styles.active : styles.link}
           >
             <MusicImage className={styles.icons} />
             <span>music</span>
@@ -30,9 +30,8 @@ const HomeMenu = () => {
         </li>
         <li>
           <Link
-            href={"/#business"}
-            onClick={() => setPatch("/#business")}
-            className={path === "/#business" ? styles.active : styles.link}
+            href={"/business"}
+            className={path === "/business" ? styles.active : styles.link}
           >
             <BusinessImage className={styles.icons} />
             <span>business</span>
@@ -40,9 +39,8 @@ const HomeMenu = () => {
         </li>
         <li>
           <Link
-            href={"/#theatre"}
-            onClick={() => setPatch("/#theatre")}
-            className={path === "/#theatre" ? styles.active : styles.link}
+            href={"/theatre"}
+            className={path === "/theatre" ? styles.active : styles.link}
           >
             <TheatreImage className={styles.icons} />
             <span>theatre</span>
@@ -50,9 +48,8 @@ const HomeMenu = () => {
         </li>
         <li>
           <Link
-            href={"/#sport"}
-            onClick={() => setPatch("/#sport")}
-            className={path === "/#sport" ? styles.active : styles.link}
+            href={"/sport"}
+            className={path === "/sport" ? styles.active : styles.link}
           >
             <SportImage className={styles.icons} />
             <span>sport</span>

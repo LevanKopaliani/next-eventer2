@@ -21,7 +21,7 @@ const Header = () => {
       });
     } else {
       setScrollHeight(true);
-      window.removeEventListener("scroll", () => {});
+      // window.removeEventListener("scroll", () => {});
     }
   }, []);
 

@@ -1,13 +1,10 @@
-.tickets {
-  padding: 0 10px;
-}
 .filter_container {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
   position: relative;
 }
-/* .filter {
+.filter {
   display: flex;
   flex: 1;
   justify-content: flex-end;
@@ -19,6 +16,7 @@
   position: relative;
   right: -100%;
   max-width: 590px;
+  /* width: 100%; */
   -webkit-transition: all 400ms ease;
   -moz-transition: all 400ms ease;
   -o-transition: all 400ms ease;
@@ -29,17 +27,17 @@
 }
 .filter_active {
   background-color: #e8e8e8;
-} */
+}
 
-/* .filter_menu ul {
+.filter_menu ul {
   display: flex;
   position: relative;
   -webkit-transition: all 400ms ease;
   -moz-transition: all 400ms ease;
   -o-transition: all 400ms ease;
   transition: all 400ms ease;
-} */
-/* .filter_menu ul li {
+}
+.filter_menu ul li {
   height: 36px;
   padding-right: 20px;
   font-size: 15px;
@@ -58,6 +56,9 @@
 .filter_menu ul li:hover {
   background-color: #f6f6f6;
 }
+.filter_menu ul li.filter_active:hover {
+  background-color: #e8e8e8;
+}
 .fitler_button {
   cursor: pointer;
   font-size: 15px;
@@ -72,42 +73,8 @@
 
   position: absolute;
   right: 0;
-} */
-
-.button_border {
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
 }
-.title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  margin-left: 5px;
-  gap: 15px;
-  text-transform: uppercase;
-  font-size: 15px;
-  font-weight: 400;
-  color: #3c3b3b;
-}
-.title::before {
-  content: url(../assets/img/tickets.svg);
-  display: inline-block;
-  width: 25px;
-  height: 30px;
-}
-.content {
-  padding: 20px 0;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(302px, 1fr));
-}
-
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .filter {
     left: 0;
     justify-content: flex-start;
@@ -131,4 +98,4 @@
     left: 0;
     height: 188px;
   }
-} */
+}

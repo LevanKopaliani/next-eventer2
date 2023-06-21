@@ -64,7 +64,7 @@ const page = () => {
           <ServicesCard width={66} {...dummydata[0]} />
           <ServicesCard {...dummydata[1]} />
         </div>
-        <h1>SPremium Services </h1>
+        <h1>Premium Services </h1>
         <div className={styles.grid}>
           <ServicesCard width={70} {...dummydata[2]} />
           <ServicesCard width={51} {...dummydata[3]} />

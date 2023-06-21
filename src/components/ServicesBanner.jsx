@@ -12,7 +12,7 @@ const ServicesBanner = (props) => {
           <br />
           with easiest, fastest and secure way
         </i>
-        <Link href={"/#signup"}>
+        <Link href={"/signup/company"}>
           <button>Create Event</button>
         </Link>
       </div>

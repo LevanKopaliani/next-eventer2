@@ -32,7 +32,7 @@ const Modal = (props) => {
     }
 
     return () => {
-      modalRef.current.close();
+      // modalRef.current.close();
     };
   }, [props.openModal]);
 
