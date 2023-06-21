@@ -7,7 +7,7 @@ import { Modal } from "@/components/Modal/Modal";
 import DefaultImage from "../../../../assets/img/100x100.png";
 import Image from "next/image";
 
-const page = () => {
+const Page = () => {
   const [openModal, setOpenModal] = useState(false);
   // Logo
   const [avatarImg, setAvatarImg] = useState(null);
@@ -107,4 +107,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

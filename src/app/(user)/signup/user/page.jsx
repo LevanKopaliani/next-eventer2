@@ -5,7 +5,7 @@ import Input from "@/components/Input/Input";
 import Button from "@/components/Button/Button";
 import { Modal } from "@/components/Modal/Modal";
 
-const page = () => {
+const Page = () => {
   const [openModal, setOpenModal] = useState(false);
 
   return (
@@ -65,4 +65,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
